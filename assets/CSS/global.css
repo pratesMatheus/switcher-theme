@@ -1,0 +1,60 @@
+:root {
+  --success: green;
+  --warning: orange;
+  --error: red;
+  --info: blue;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    --background: #000;
+    --color: #fff;
+    --primary-text-color: #fff;
+    --secondary-text-color: #9a9a9a;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    --background: #fff;
+    --primary-text-color: #000;
+    --secondary-text-color: #424242;
+  }
+}
+
+html[data-theme="dark"] {
+  --background: #111;
+  --color: #fff;
+  --primary-text-color: #fff;
+  --secondary-text-color: #9a9a9a;
+}
+html[data-theme="light"] {
+  --background: #fff;
+  --color: #000;
+  --primary-text-color: #000;
+  --secondary-text-color: #424242;
+}
+/* https://github.com/dracula/dracula-theme */
+html[data-theme="dracula"] {
+  --background: #282a36;
+  --color: #fff;
+  --primary-text-color: #ff79c6;
+  --secondary-text-color: #50fa7b;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--color);
+}
+
+button {
+  background-color: var(--warning);
+}
+
+h1 {
+  color: var(--primary-text-color);
+}
+
+h2 {
+  color: var(--secondary-text-color);
+}
