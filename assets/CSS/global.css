@@ -7,7 +7,7 @@
 
 @media (prefers-color-scheme: dark) {
   html {
-    --background: #000;
+    --background: #111;
     --color: #fff;
     --primary-text-color: #fff;
     --secondary-text-color: #9a9a9a;
@@ -41,7 +41,6 @@ html[data-theme="dracula"] {
   --primary-text-color: #ff79c6;
   --secondary-text-color: #50fa7b;
 }
-
 body {
   background-color: var(--background);
   color: var(--color);
